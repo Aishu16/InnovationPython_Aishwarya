@@ -1,4 +1,4 @@
-# AISHWARYA WAGH
+# Aishwarya Wagh
 
 Hello.
 

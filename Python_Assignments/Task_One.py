@@ -1,17 +1,20 @@
 #TASK ONE: NUMBERS AND VARIABLES
-print("1.Create three variables in a single line and assign different values to them and make sure their data types are invited "
-      "differently. Like one is int, another one is float and last one is string")
+'''
+1.Create three variables in a single line and assign different values to them and
+make sure their data types are invited differently.
+Like one is int, another one is float and last one is string")
 a = 1; b = 2.01; c = 'string'
+'''
 
 a, b, c = 1, 2.01, 'string'
 
 print(a,"=", type(a))
 print(b,"=", type(b))
 print(c,"=", type(c))
-
-print("2.Create a variable of value type complex and "
-      "swap it with another variable whose value is an integer.")
-
+'''
+2.Create a variable of value type complex and 
+swap it with another variable whose value is an integer.
+'''
 print("---Before Swapping---")
 d, e = 10+3j, 10
 print(d,"= Type of d is", type(d))
@@ -21,8 +24,10 @@ print("---After Swapping---")
 print(d,"= Type of d is", type(d))
 print(e,"= Type of e is", type(e))
 
-print("3. Swap two numbers using third variable as result name and "
-      "do the same task without using any third variable.")
+'''
+3. Swap two numbers using third variable as result name and do the same task without using any third variable.
+'''
+
 print("i) ")
 f, g = 15, 20
 print("        ---Before Swapping---")
@@ -41,7 +46,9 @@ f, g = g, f
 print("        ---After Swapping---          ")
 print(f, g)
 
-print("4. Write a program to print the value given by the user by using both Python 2.x and Python 3.x Version.")
+'''
+4. Write a program to print the value given by the user by using both Python 2.x and Python 3.x Version.")
+'''
 #Python 2
 '''txt = raw_input("Type something to test: ")
 print "Is this what you just said", txt

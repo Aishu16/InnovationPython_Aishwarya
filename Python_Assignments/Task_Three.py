@@ -256,16 +256,76 @@ if the entered number is odd append it to the odd list.
 ●	Make sure once you entered the total 5 element calculate the sum of the list and return the maximum out of the list.
 
 '''
+def addition(list):
+    return sum(list)
+
+def maximum(list):
+   return max(list)
+
+b = int(input("Enter size of list: "))
+x = []
+print("Enter the number between 1 to 50: ")
+
+for a in range(b):
+    y = int(input(""))
+    x.append(y)
+
+even_list = []
+odd_list = []
+def even_odd(x):
+    for i in x:
+        if i > 0 and i < 51:
+            if i % 2 == 0 and len(even_list) < 5:
+                even_list.append(i)
+
+            elif i % 2 != 0 and len(odd_list) < 5:
+                odd_list.append(i)
+        else:
+            print("Only number between 1 to 50 are acceptable")
+
+    print("Even list: \n", even_list,"\n",
+          "Addition of even list: ", addition(even_list),"\n",
+          "Max number in even_list: ", maximum(even_list))
+    print("Odd list: \n", odd_list, "\n",
+          "Addition of odd list", addition(odd_list), "\n",
+          "Max number in odd_list", maximum(odd_list))
+
+even_odd(x)
+
+
 
 '''
 21. Write a program to find out the occurrence of a specific word 
 from an alphanumeric statement. Example: 12abcbacbaba344ab  
 Output: a=5 b=5 c=2 make sure you should avoid the numbers in you logic
 '''
+def wordcount():
+    x = input("Enter the string: ")
+    y = input("Enter the words: ")
+    a = x.split(" ")
 
+
+    count = 0
+    for i in a:
+        if i in y:
+            count += 1
+    print("Words frequency is: ", count)
+
+wordcount()
 
 '''
 22. Generate and print another tuple whose values are even numbers 
 in the given tuple (1,2,3,4,5,6,7,8,9,10).
 
 '''
+
+def even_num_tuple(t):
+    x = []
+    for i in t:
+        if i % 2 == 0:
+            x.append(i)
+    return tuple(x)
+
+tp = (1,2,3,4,5,6,7,8,9,10)
+
+print(even_num_tuple(tp))
